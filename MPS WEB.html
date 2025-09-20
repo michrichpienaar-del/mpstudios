@@ -1,0 +1,245 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MP Studios — Portfolio, Pricing, Team</title>
+  <meta name="description" content="MP Studios portfolio site. Creative ads, social content, drone footage. View work, pricing, and meet the team: Michael Pienaar, Milan Moodly & Marcio Pereira." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0e1015;--card:#141824;--muted:#a9b4c9;--text:#e9edf5;--brand:#6aa7ff;--brand2:#78ffd8;--line:rgba(255,255,255,.08)}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img,video{max-width:100%;display:block}
+    .wrap{max-width:1180px;margin:0 auto;padding:22px}
+    .nav{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(14,16,21,.7);z-index:50;border-bottom:1px solid var(--line)}
+    .row{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+    .space{justify-content:space-between}
+    .logo{display:flex;gap:10px;align-items:center;font-weight:800}
+    .dot{width:10px;height:10px;border-radius:50%;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+    .pill{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);color:#9fb3d9}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:14px;border:1px solid var(--line);background:linear-gradient(180deg,#182033,#121725);color:var(--text);cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand2));color:#0a0e14;border-color:transparent;font-weight:700}
+    .hero{padding:84px 0}
+    .grid{display:grid;gap:22px}
+    @media(min-width:980px){.grid.columns-2{grid-template-columns:1.1fr .9fr}}
+    h1{font-size:44px;line-height:1.05;margin:10px 0 12px}
+    p.lead{font-size:18px;color:#cfd7e6;max-width:64ch}
+    .card{background:linear-gradient(180deg,#151a25,#111623);border:1px solid var(--line);border-radius:18px;padding:22px}
+    .chip{display:inline-flex;gap:8px;align-items:center;padding:8px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:13px}
+    .tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+    .tag{font-size:12px;color:#c2cbe0;border:1px dashed var(--line);padding:6px 10px;border-radius:999px}
+    .section{padding:60px 0}
+    .section h2{font-size:28px;margin:0 0 10px}
+    .section p.sub{color:var(--muted);margin:0 0 24px}
+    .cards{display:grid;gap:18px}
+    @media(min-width:880px){.cards.columns-3{grid-template-columns:repeat(3,1fr)}}
+    .list{display:grid;gap:8px;margin:12px 0 0;padding:0}
+    .list li{list-style:none;display:flex;gap:10px;align-items:flex-start}
+    .list li::before{content:"✓";color:var(--brand)}
+    .gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+    .tile{aspect-ratio:1/1;border-radius:14px;background:linear-gradient(135deg,#1b2230,#121722);border:1px solid var(--line);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .grid-2{display:grid;gap:18px}
+    @media(min-width:900px){.grid-2{grid-template-columns:1fr 1fr}}
+    footer{padding:45px 0;color:var(--muted);border-top:1px solid var(--line)}
+    .note{font-size:12px;color:var(--muted)}
+    .kicker{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#9fb3d9}
+    .price{font-size:32px;font-weight:800;background:linear-gradient(135deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:8px}
+    .team{display:grid;gap:18px}
+    @media(min-width:880px){.team{grid-template-columns:repeat(3,1fr)}}
+    .member{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center}
+    .avatar{width:84px;height:84px;border-radius:14px;background:linear-gradient(135deg,#24324a,#101621);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-weight:800}
+    .badges{display:flex;gap:8px;flex-wrap:wrap;margin-top:6px}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap row space">
+      <a href="#top" class="logo"><span class="dot"></span> MP Studios</a>
+      <nav class="row">
+        <a href="#portfolio" class="pill">Portfolio</a>
+        <a href="#pricing" class="pill">Pricing</a>
+        <a href="#team" class="pill">Team</a>
+        <a href="#contact" class="pill">Contact</a>
+        <a href="https://wa.me/27608837690?text=Hi%20MP%20Studios%20—%20I'd%20like%20a%20quote" target="_blank" rel="noopener" class="btn primary">Chat on WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="wrap">
+    <section class="hero">
+      <div class="grid columns-2">
+        <div class="card">
+          <span class="chip">Johannesburg • Content • Ads • Drone</span>
+          <h1>Clean, modern visuals built for growth</h1>
+          <p class="lead">We plan, film, and edit high-impact videos and photos for restaurants, clubs, DJs, creators, and small businesses. This is our working portfolio and pricing page. If you like the style, reach out — we move fast.</p>
+          <div class="tags">
+            <span class="tag">DJI Neo drone</span>
+            <span class="tag">Ronin RS3 gimbal</span>
+            <span class="tag">Canon EOS 650D</span>
+            <span class="tag">Studio lighting</span>
+            <span class="tag">Microphones</span>
+            <span class="tag">Tripods</span>
+          </div>
+          <div class="row" style="margin-top:16px">
+            <a href="#portfolio" class="btn primary">View portfolio</a>
+            <a href="#pricing" class="btn">packages and pricing</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section">
+      <h2>Portfolio</h2>
+      <p class="sub"> <code></code>  <code></code></p>
+      <div class="gallery">
+        <div class="tile"><img src="media\IMG_4068.JPG.JPG"" alt="P1"></div>
+        <div class="tile"><img src="media\IMG_4069.JPG.JPG"" alt="P2"></div>
+        <div class="tile"><video src="media\copy_A2313A44-7F37-4378-8988-BCA5F94E7DC4.mov.mov"" autoplay muted loop playsinline controls></video></div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+      <p class="sub"></p>
+
+      <div class="cards columns-3">
+        <article class="card">
+          <div class="kicker">Social Media Starter</div>
+          <div class="price">R1,500 – R2,500</div>
+          <p class="muted">For creators, DJs, and small businesses who need quick online content.</p>
+          <ul class="list">
+            <li>1x camera setup (Canon EOS 650D + tripod)</li>
+            <li>Studio lighting & microphone setup</li>
+            <li>Up to 2 hours of filming</li>
+            <li>1 short-form video (TikTok/Reel/YouTube Short)</li>
+            <li>5–10 edited product/portrait pictures</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="kicker">Business Ads Package</div>
+          <div class="price">R3,500 – R5,000</div>
+          <p class="muted">For restaurants, clubs, and brands wanting professional ad content.</p>
+          <ul class="list">
+            <li>Drone shots (DJI Neo Drone) + gimbal footage</li>
+            <li>3–4 hours of filming</li>
+            <li>1 professional ad video (30–60 seconds)</li>
+            <li>15–20 edited product/venue photos</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="kicker">Premium Creator Package</div>
+          <div class="price">R5,500 – R8,500</div>
+          <p class="muted">For musicians, DJs, and influencers who want strong personal branding.</p>
+          <ul class="list">
+            <li>Full-day shoot (up to 6 hours)</li>
+            <li>Drone + gimbal cinematic shots</li>
+            <li>Multiple camera angles</li>
+            <li>Studio lighting & pro microphone use</li>
+            <li>2–3 short-form videos + 1 long-form video</li>
+            <li>20+ edited lifestyle/product photos</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="grid-2" style="margin-top:18px">
+        <div class="card">
+          <div class="kicker">Event Package</div>
+          <div class="price">R9,000 – R13,500</div>
+          <p class="muted">For clubs, festivals, product launches, or business events.</p>
+          <ul class="list">
+            <li>Drone coverage of venue/event</li>
+            <li>Gimbal footage for smooth tracking shots</li>
+            <li>Up to 8 hours coverage</li>
+            <li>Highlight video (1–3 minutes)</li>
+            <li>2–3 short clips for social media ads</li>
+            <li>30+ edited event photos</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="kicker">Add-ons</div>
+          <ul class="list">
+            <li>Extra product pictures (per 20): R800</li>
+            <li>Additional short-form videos: R1,200 each</li>
+            <li>Raw footage delivery: R1,000</li>
+            <li>Scriptwriting & creative direction: R1,500</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section">
+      <h2>Team</h2>
+      <p class="sub"></p>
+      <div class="team">
+        <div class="card member">
+          <div class="avatar">MP</div>
+          <div>
+            <div>Michael Pienaar</div>
+            <div class="muted">Director • Filming • Editing • Drone</div>
+          </div>
+        </div>
+        <div class="card member">
+          <div class="avatar">MM</div>
+          <div>
+            <div>Milan Moodly</div>
+            <div class="muted">Producer • Client success • On-set</div>
+          </div>
+        </div>
+        <div class="card member">
+          <div class="avatar">MP</div>
+          <div>
+            <div>Marcio Pereira</div>
+            <div class="muted">Sales & Partnerships • Client acquisition</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="sub">Send us a message via WhatsApp or email</p>
+      <div class="cards">
+        <div class="card">
+          <div class="row space">
+            <div>
+              <div class="kicker">WhatsApp</div>
+              <div class="muted">Fastest response for quotes and availability</div>
+            </div>
+            <a href="https://wa.me/27608837690?text=Hi%20MP%20Studios%20—%20I'd%20like%20a%20quote" target="_blank" class="btn primary">Chat on WhatsApp</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="row space">
+            <div>
+              <div class="kicker">Email</div>
+              <div class="muted">Michrichpienaar@icloud.com</div>
+            </div>
+            <a href="mailto:Michrichpienaar@icloud.com" class="btn">Send email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <div class="row space">
+      <div class="note">© 2025 MP Studios. All rights reserved.</div>
+      <div class="note">INSTAGRAM @mpnaar/@michaelpienaarstudios</div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
